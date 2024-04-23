@@ -1,6 +1,8 @@
 # Dev From Vito
 from adivinhacao.jogo_da_adivinhacao import *
 from forca.jogo_da_forca import *
+from forca.func_jogo_forca import *
+from velha.jogo_da_velha import *
 import time
 
 print("  Bem-Vindo a jogoteca do vito  \n")
@@ -19,11 +21,13 @@ if idade_do_menino >= 18:
 else:
     print("Sai daq mlk do kraio o bglh é pra de maior")
     exit
-
-# chamando o jogo da forca
-if jogo == 2:
+# chamando o jogo da velha
+if jogo == 1:
+    mostrarTabuleiro()
+# chamando o jogo da adivinhação
+elif jogo == 2:
     adivinhacao()
 
 # chamando o jogo da forca
 elif jogo == 3:
-    pass
+    jogo_forca()
